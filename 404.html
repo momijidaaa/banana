@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found | Bananaserver</title>
+
+  <meta name="description" content="ページが見つかりませんでした">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+
+  <style>
+    /* ===== 404 Page CSS ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: "Poppins", "Noto Sans JP", Arial, sans-serif;
+      background: linear-gradient(135deg, #def7ff, #bdefff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    .error-container {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .error-code {
+      font-size: 96px;
+      font-weight: 700;
+      color: #ffffff;
+      text-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .error-message {
+      font-size: 20px;
+      margin-top: 1rem;
+      color: #004d66;
+    }
+
+    .error-description {
+      margin-top: 0.5rem;
+      font-size: 14px;
+      color: #336677;
+    }
+
+    .error-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #ffffff;
+      color: #007799;
+      text-decoration: none;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .error-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    /* ===== スマホ対応 ===== */
+    @media (max-width: 600px) {
+      .error-code {
+        font-size: 64px;
+      }
+
+      .error-message {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="error-container">
+    <div class="error-code">404</div>
+
+    <div class="error-message">
+      ページが見つかりません
+    </div>
+
+    <div class="error-description">
+      お探しのページは存在しないか、移動された可能性があります。
+    </div>
+
+    <a href="index.html" class="error-button">
+      ホームへ戻る
+    </a>
+  </div>
+</body>
+</html>
