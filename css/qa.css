@@ -1,0 +1,144 @@
+/* qa.css */
+
+/* リセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Yu Gothic', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* ヘッダー */
+.site-header {
+  background-color: #ffeb3b;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.site-header__wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav__wrapper {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav__toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* メイン */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #ff9800;
+}
+
+/* FAQアイテム */
+.faq__item {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.faq__question {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.faq__answer {
+  margin-top: 0.5rem;
+  display: none;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* FAQ折りたたみ */
+.faq__item.active .faq__answer {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* アンケートリンク */
+.faq__item a {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.5rem 1rem;
+  background-color: #ff9800;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.faq__item a:hover {
+  background-color: #e68900;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #ffeb3b;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 1rem 0;
+  }
+
+  .nav__wrapper.show {
+    display: flex;
+  }
+
+  .nav__toggle {
+    display: block;
+  }
+}
