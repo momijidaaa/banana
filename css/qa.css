@@ -14,52 +14,6 @@ body {
   color: #333;
 }
 
-/* ヘッダー */
-.site-header {
-  background-color: #ffeb3b;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.site-header__wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0.8rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  text-decoration: none;
-}
-
-.nav__wrapper {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
-
-.nav__item a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.nav__toggle {
-  display: none;
-  font-size: 1.5rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 /* メイン */
 main {
   max-width: 800px;
